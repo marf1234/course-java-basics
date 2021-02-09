@@ -10,9 +10,9 @@ public class LocalDateTimeExample2 {
         int hour = now.getHour();
         int minute = now.getMinute();
 
-        System.out.println("Год: " + year);
-        System.out.println("День в году: " + dayYear);
-        System.out.println("Часы: " + hour);
-        System.out.println("Минуты: " + minute);
+        System.out.println("Year: " + year);
+        System.out.println("Day in year: " + dayYear);
+        System.out.println("Hours: " + hour);
+        System.out.println("Minutes: " + minute);
     }
 }
