@@ -20,7 +20,7 @@ public class Task05 extends StandardInputTask {
         //FIXME
         // Ниже приведены значения присваиваемые переменным. Их можно изменять для проверки различных вариантов входных
         // аргументов. Типы данных изменять нельзя
-        byte monthNumber = 1;
+        byte monthNumber = 8;
 
         String monthName = getMonthName(monthNumber);
         System.out.printf("Result: %s", monthName);
@@ -35,32 +35,45 @@ public class Task05 extends StandardInputTask {
     static String getMonthName(byte monthNumber) {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
-        switch ((int)monthNumber) {
-            case (byte)1:
-                return "JANUARY";
-            case (byte)2:
-                return "FEBRUARYY";
-            case (byte)3:
-                return "MARCH";
-            case (byte)4:
-                return "APRIL";
-            case (byte)5:
-                return "MAY";
-            case (byte)6:
-                return "JUNE";
-            case (byte)7:
-                return "JULY";
-            case (byte)8:
-                return "AUGUST";
-            case (byte)9:
-                return "SEPTEMBER";
-            case (byte)10:
-                return "OCTOBER";
-            case (byte)11:
-                return "NOVEMBER";
-            case (byte)12:
-                return "DECEMBER";
+        String monthName= null;
+        switch (monthNumber) {
+            case 1:
+                monthName="JANUARY";
+                break;
+            case 2:
+                monthName= "FEBRUARY";
+                break;
+            case 3:
+                monthName= "MARCH";
+                break;
+            case 4:
+                monthName= "APRIL";
+                break;
+            case 5:
+                monthName= "MAY";
+                break;
+            case 6:
+                monthName= "JUNE";
+                break;
+            case 7:
+                monthName= "JULY";
+                break;
+            case 8:
+                monthName= "AUGUST";
+                break;
+            case 9:
+                monthName= "SEPTEMBER";
+                break;
+            case 10:
+                monthName= "OCTOBER";
+                break;
+            case 11:
+                monthName= "NOVEMBER";
+                break;
+            case 12:
+                monthName= "DECEMBER";
+                break;
         }
-        return null;
+        return monthName;
     }
 }
