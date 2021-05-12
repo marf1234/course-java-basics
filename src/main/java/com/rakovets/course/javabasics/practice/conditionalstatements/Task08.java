@@ -34,17 +34,19 @@ public class Task08 {
      *
      * @param damage           чистый урон оружия (без атрибута)
      * @param typeMob          тип моба
-     * @param hasHolyAttribute начичие у оружия атрибута святости
+     * @param hasHolyAttribute наличие у оружия атрибута святости
      * @return итоговый урон по данному типу моба
      */
     static int getTotalDamage(int damage, String typeMob, boolean hasHolyAttribute) {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
         if (hasHolyAttribute == true) {
-            if ((typeMob =="UNDEAD") || (typeMob == "ZOMBIE")){
-              //  return (double)damage*1.5;
+            if ((typeMob.equals("UNDEAD")) || ((typeMob.equals("ZOMBIE")) | (typeMob.equals("UNDEAD")) )){
+              damage = (int) (damage*1.5);
+            } else  if (typeMob.equals("SAINT")) {
+                damage = damage/2;
             }
-        } else return damage;
-        return 0;
+        }
+        return damage;
     }
 }
