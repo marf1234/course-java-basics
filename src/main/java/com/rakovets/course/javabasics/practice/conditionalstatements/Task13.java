@@ -34,7 +34,16 @@ public class Task13 {
     static int getFloorNumber(int numberFloors, int numberApartmentsPerFloor, int apartmentNumber) {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
+        int m1 = apartmentNumber / (numberFloors * numberApartmentsPerFloor);//Сколько целых подъездов "заполнено"
+        int k1 = apartmentNumber - m1 * numberFloors * numberApartmentsPerFloor;//Номер квартиры относительно начала подъезд
+        double n1 = k1 / numberApartmentsPerFloor;//Сколько под квартирой еще этажей
+        if(k1 == 0){
+            m1--;
+            k1 = numberApartmentsPerFloor * numberFloors;
+            n1 = numberFloors;
+        }
         int floorQuantity = 0;
 
     return floorQuantity;
+}
 }
