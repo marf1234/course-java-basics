@@ -48,9 +48,66 @@ public class Task14 {
     static String getZodiacYearName(int day, int month, int year) {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используя параметры метода
-        switch (year) {
-         //   case (year%12 == 1):
+        int x = (1997 - year) % 12;
+        String chineseSign = null;
+        if ((x == 1) || (x == -11)){
+            chineseSign="Rat";
         }
-        return null;
+        else{
+            if (x == 0){
+                chineseSign="Ox";
+            }
+            else{
+                if ((x == 11) || (x == -1)){
+                    chineseSign="Tiger";
+                }
+                else{
+                    if ((x == 10) || (x == -2)){
+                        chineseSign="Rabbit";
+                    }
+                    else{
+                        if ((x == 9) || (x == -3)){
+                            chineseSign="Dragon";
+                        }
+                        else{
+                            if ((x == 8) || (x == -4)){
+                                chineseSign="Snake";
+                            }
+                            else{
+                                if ((x == 7) || (x == -5)){
+                                    chineseSign="Horse";
+                                }
+                                else{
+                                    if ((x == 6) || (x == -6)){
+                                        chineseSign="Ram";
+                                    }
+                                    else{
+                                        if ((x == 5) || (x == -7)){
+                                            chineseSign="Monkey";
+                                        }
+                                        else{
+                                            if ((x == 4) || (x == -8)){
+                                                chineseSign="Rooster";
+                                            }
+                                            else{
+                                                if ((x == 3) || (x == -9)){
+                                                    chineseSign="Dog";
+                                                }
+                                                else{
+                                                    if ((x == 2) || (x == -10)){
+                                                        chineseSign="Pig";
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return chineseSign;
     }
 }
