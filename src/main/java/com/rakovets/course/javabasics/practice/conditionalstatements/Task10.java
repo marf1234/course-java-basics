@@ -40,7 +40,7 @@ public class Task10 {
         int numberStation = 0;
         if (firstFuelReserves<=secondFuelReserves || firstFuelReserves <= thirdFuelReserves) {
             return 1;
-        } else if (secondFuelReserves<=thirdFuelReserves || secondFuelReserves<=firstFuelReserves)  {
+        } else if (secondFuelReserves<=thirdFuelReserves ){
             return 2;
         } else return 3;
     }
